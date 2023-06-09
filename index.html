@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Page Title</h1>
+    <p id="description">description</p>
+    <form method="post" action='' id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label" >Enter Your Name: <input id="name" name="name" type="text" required placeholder="eg: Greg" /></label>    
+        <label for="email" id="email-label">Enter Your Email: <input id="email" name="email" type="email" required placeholder="eg: fake@email.com"/></label>
+        <label for="number" id="number-label">Enter a number: <input id="number" name="number" type="number" required  placeholder="0~120" min="0" max="120"/></label>
+        <label for="dropdown">Dropdown: 
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">dropdown option 1</option>
+            <option value="2">dropdown option 2</option>
+          </select>
+        </label>
+        <p class="value-Headings">Radio Options:</p>
+        <label for="radio-option1"> 
+          <input id="radio-option1" type="radio" name="radio-options" class="inline" value="1" /> Radio option 1</label>
+        <label for="radio-option2"><input id="radio-option2" type="radio" name="radio-options" class="inline" value="2" /> Radio option 2</label>
+        <p class="value-Headings">Tickbox Options:</p>
+        <label for="tickbox1">
+          <input id="tickbox-1" type="checkbox" required name="tickbox-1" class="inline" value="1"/> Tickbox 1 
+        </label>
+        <label for="tickbox-2" >
+          <input id="tickbox-2" type="checkbox" required name="tickbox-2" class="inline" value="2"/> Tickbox 2 
+        </label>
+        <label for="tickbos-3">
+          <input id="tickbox-3" type="checkbox" required name="tickbox-3" class="inline" value="3"/> Tickbox 3 
+        </label>
+        <label for="textarea">Text Area:
+          <textarea id="textarea" name="textarea" rows="3" cols="30" placeholder="type here"></textarea>
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+    
+  <body>
+</html>
